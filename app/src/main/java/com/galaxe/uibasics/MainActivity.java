@@ -2,6 +2,7 @@ package com.galaxe.uibasics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
@@ -10,6 +11,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int mCount = 0;
     private TextView mShowCount;
+    private int grayColor = Color.parseColor("#aaaaaa");
+    private int evenBackgroundColor = Color.parseColor("#6200ee");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,5 +31,11 @@ public class MainActivity extends AppCompatActivity {
         if(mShowCount != null){
             mShowCount.setText(Integer.toString(mCount));
         }
+    }
+
+    public void resetToZero(View view) {
+        mShowCount.setText(Integer.toString(0));
+        view.setBackgroundColor(grayColor);
+
     }
 }
