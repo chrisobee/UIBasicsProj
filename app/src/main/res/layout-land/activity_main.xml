@@ -16,6 +16,8 @@
         android:onClick="showToast"
         android:text="@string/button_label_toast"
         android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="src_over"
         app:layout_constraintBottom_toTopOf="@+id/button_zero"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +32,8 @@
         android:onClick="countUp"
         android:text="@string/button_label_count"
         android:textColor="@android:color/white"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="src_over"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_zero" />
@@ -61,9 +65,10 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:background="@android:color/darker_gray"
-        android:text="@string/button_label_zero"
-        app:backgroundTint="@android:color/darker_gray"
         android:onClick="resetToZero"
+        android:text="@string/button_label_zero"
+        app:backgroundTint="@android:color/transparent"
+        app:backgroundTintMode="src_over"
         app:layout_constraintBottom_toTopOf="@+id/button_count"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_toast" />
